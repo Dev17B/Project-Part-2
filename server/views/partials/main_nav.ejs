@@ -1,0 +1,77 @@
+<!--NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="https://seeklogo.com/images/1/18_Joe_Gibbs_Racing-logo-253AEA2E68-seeklogo.com.png"alt="topicone" style="width:42px;height:42px;"> Group 18</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto"> 
+
+        <li class="nav-item">
+        <% if (title == "Home") { %>
+          <a class="nav-link active" href="/home">
+        <% } else { %>
+          <a class="nav-link" href="/home">
+        <% } %>
+          <i class="fa-solid fa-lg fa-house-user"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "USA missions") { %>
+            <a class="nav-link active" href="/wikipedia">
+          <% } else { %>
+            <a class="nav-link" href="/wikipedia">
+          <% } %>
+          <i class="fa-solid fa-flag-usa"></i>
+          USA missions</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "England  missions") { %>
+            <a class="nav-link active" href="/wikipedia2">
+          <% } else { %>
+            <a class="nav-link" href="/wikipedia2">
+          <% } %>
+          <i class="fa-solid fa-flag-usa"></i>
+          England  missions</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "Mexico missions") { %>
+            <a class="nav-link active" href="/wikipedia3">
+          <% } else { %>
+            <a class="nav-link" href="/wikipedia3">
+          <% } %>
+          <i class="fa-sharp fa-solid fa-flag-checkered"></i>
+          Mexico missions</a>
+        </li>
+
+        <li class="nav-item">
+          <% if (title == "Group 18 Team") { %>
+            <a class="nav-link active" href="/Group18Team">
+          <% } else { %>
+            <a class="nav-link" href="/Group18Team">
+          <% } %>
+          <i class="fa-sharp fa-solid fa-people-group"></i>
+          Group 18 Team</a>
+        </li>
+
+      <% if(typeof displayName =='string' && displayName) {%>
+        <li class="navbar-text" >
+        <i class="fas fa-lg fa-user"></i>
+        Welcome, <%= displayName %> </li>
+        <li class="nav-item">
+        <a href="/logout" class="nav-link">
+        <i class="fas fa-lg fa-sign-out-alt"></i>Logout</a></li>
+
+      <% } else { %>
+        <li class="nav-item">
+          <a href="/login" class="nav-link">
+          <i class="fas fa-lg fa-sign-in-alt"></i>Login</a></li>
+      <%} %> 
+        
+    </div>
+  </div>
+</nav>

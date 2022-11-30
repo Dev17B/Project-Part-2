@@ -1,0 +1,56 @@
+ <!-- wikipedia add -->
+<%- include ../partials/header.ejs %>  <!-- This line calling header.ejs -->
+<%- include ../partials/main_nav.ejs %> <!-- This line calling Partials.ejs -->
+<!-- Content for the add page -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-15">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+
+                <div class="form-group">
+                    <label for="missionnameTextField"> Mission name </label>
+                    <input type="text" class="form-control"
+                    id="missionnameTextField"
+                    placeholder="Enter the Mission name"
+                    name="missionname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateTextField"> Time period </label>
+                    <input type="text" class="form-control"
+                    id="dateTextField"
+                    placeholder="Enter the time period of the mission"
+                    name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="leaderTextField"> Team Leader </label>
+                    <input type="text" class="form-control"
+                    id="leaderTextField"
+                    placeholder="Enter the team leader of the name"
+                    name="leader" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="descTextField"> Description </label>
+                    <textarea type="text" class="form-control"
+                    id="descTextField"
+                    placeholder="Enter the description of the mission"
+                    name="description" required></textarea>
+                </div>
+
+                <br>
+                <button class="btn-btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit the information
+                </button>
+
+                <a href="/wikipedia" class="btn-btn-warning">
+                    <i class="fas fa-undo"></i> Cancel and Go back 
+                </a>
+            </form>
+
+            
+        </div>    
+    </div>
+</div>

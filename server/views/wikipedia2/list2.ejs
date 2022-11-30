@@ -1,0 +1,80 @@
+<%- include ../partials/header.ejs %>  <!-- This line calling header.ejs -->
+<%- include ../partials/main_nav.ejs %> <!-- This line calling Partials.ejs -->
+<!-- Main Content -->
+<body class="titale2">
+  <div class="main2" id="About"></div>
+    <main>
+        <div class="row2">
+            <div class="col-md-offset-3 col-md-15">
+                <div class="titels">
+                    <h1><%= title %></h1>
+                </div>
+                <%- include ../partials/wikipedia2info.ejs %> <!-- This line calling Partials.ejs -->
+                <h3 class="center">England missions</h3>
+                <% if(typeof displayName=='string' && displayName){ %>
+                    <a href="/wikipedia2/add2"class="btn btn-primary" role="button">
+                    <i class="fa-solid fa-plus"></i> Add Mission Information</a>
+                <br>
+                <% } %>
+               
+                <table class="table table-bordered table-striped table-hover">
+                    <tr class="d-flex2">
+                    <% if(typeof displayName=='string' && displayName){ %>
+                        <th class="text-center col-2">Mission name</th>
+                        <th class="text-center col-1">Time period</th>
+                        <th class="text-center col-3">Team Leader </th>
+                        <th class="text-center col-4">Description</th>
+                        <th class="text-center col-1"></th>
+                        <th class="text-center col-1"></th>
+                    <% } else { %>
+                        <th class="text-center col-2">Mission name</th>
+                        <th class="text-center col-1">Time period</th>
+                        <th class="text-center col-3">Team Leader </th>
+                        <th class="text-center col-6">Description</th>
+                    <% } %>
+                    </tr>
+                   
+                    <% for(let count=0; count< Wikipedia2.length; count++) { %>
+                        <tr class="d-flex2">
+                        <% if(typeof displayName=='string' && displayName){ %>
+                            <td class="text-center col-2"><%= Wikipedia2[count].missionname2 %></td>
+                            <td class="text-center col-1"><%= Wikipedia2[count].date2 %></td>
+                            <td class="text-center col-3"><%= Wikipedia2[count].leader2 %></td>
+                            <td class="text-center col-4"><%= Wikipedia2[count].description2 %></td>
+                            <td class="text-center col-1">
+                                <a href="/wikipedia2/edit2/<%= Wikipedia2[count]._id %>"
+                                    class='btn btn-primary'>
+                                    <i class="fas fa-pencil-alt"></i> Edit 
+                                </a>
+                            
+                            </td>
+                            <td class="text-center col-1">
+                                <a href="/wikipedia2/delete2/<%= Wikipedia2[count]._id %>"
+                                    class='btn btn-danger'>
+                                    <i class="fas fa-trash-alt"></i> Delete 
+                                </a>
+                            
+                            </td>
+                        <% } else { %>
+                            <td class="text-center col-2"><%= Wikipedia2[count].missionname2 %></td>
+                            <td class="text-center col-1"><%= Wikipedia2[count].date2 %></td>
+                            <td class="text-center col-3"><%= Wikipedia2[count].leader2 %></td>
+                            <td class="text-center col-6"><%= Wikipedia2[count].description2 %></td>
+
+                        <% } %>
+                        </tr>
+                    <% } %>
+                </table>
+
+                <section class="Information2">
+                    <!-- for more content on page for user with button tag to make page more attractive/*-->
+                    <h2>Thank you, have a nice day...</h2>
+                </section>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<%- include ../partials/footer.ejs %> <!-- This line calling footer.ejs -->

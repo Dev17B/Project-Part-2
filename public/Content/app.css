@@ -1,0 +1,408 @@
+@charset "UTF-8";
+body 
+{
+    /*added some linear-gradient color for body section */
+    background: linear-gradient(451deg,#c78e8e,#eb4e4e,#eb4e4e,#c78e8e);
+    width: auto;
+}
+.d-flex
+{
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    text-size-adjust: 12;
+}
+.d-flex2
+{
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    text-size-adjust: 12;
+}
+.d-flex3
+{
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    text-size-adjust: 12;
+}
+.center
+{
+    text-align: center;
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    color: black;
+    display: block;
+    text-align:center;
+    max-width: 30%;
+    margin: 10px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 40px;
+    height: auto;
+
+}
+.doit
+{
+    text-align: center;
+}
+.sidepic::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+.sidepic
+{
+    text-align: center;
+    border-radius: 400px; 
+    background-color: #000000;
+    text-align: center;
+    height: auto;
+    max-width:99%;
+    margin: 10px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px; 
+    color: white;  
+
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.zoom
+{
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    padding: 5px;
+}
+.zoom img {
+    /*Best settings and adjustments for zoom my photo feature*/
+    width: 89%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    /*Best settings and adjustments for zoom my photo feature*/
+    transform: scale(1.2);
+}
+
+
+.titels
+{
+    /*Best settings and adjustments for name of Assignment section */
+    background-color: #000000;
+    display: block;
+    text-align:center;
+    max-width: 30%;
+    margin: 10px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 40px;
+    height: auto;
+}
+.titels h1
+{
+    color: white;
+}
+.Information
+{
+    /*Best settings and adjustments for the "Information" section */
+    background: linear-gradient(270deg,#f3dab4,#f1a431, #f3dab4 );
+    text-align:center;
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    height: auto;
+}
+.Information2
+{
+    text-align:center;
+    background-color: #000000;
+    color: white;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    height: auto; 
+}
+.form
+{
+    /*Best settings and adjustments for form section */
+    background-color: #000000;
+    max-width: 1000px;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 25px;
+    color:orange;
+    
+}
+.form h5
+{
+    /*text color for section */
+    color: orange;
+}
+.form2
+{
+    /*Best settings and adjustments for form section */
+    background-color: #000000;
+    max-width: 1000px;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 25px;
+    color:orange;
+    
+}
+.form2 h5
+{
+    /*text color for section */
+    color: orange;
+}
+.form3
+{
+    /*Best settings and adjustments for form section */
+    background-color: #000000;
+    max-width: 1000px;
+    display: block;
+    margin: 50px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 25px;
+    color:orange;
+    
+}
+.form3 h5
+{
+    /*text color for section */
+    color: orange;
+}
+input, select, textarea{
+    /*Best settings and adjustments for input of form section */
+    width:100%;
+    line-height: 32px;
+}
+.Assignment
+{
+    /*Best settings and adjustments for name of Assignment section */
+    background-color: #000000;
+    text-align: center;
+    display: block;
+    max-width: 44%;
+    margin: 10px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 40px;
+    height: auto;
+}
+.intro
+{
+    /*Best settings and adjustments for intro section */
+    background: linear-gradient(270deg,#f3dab4,#dfa857,#f1a431,#dfa857, #f3dab4 );
+    text-align: center;
+    width: auto;
+    max-width: 65%;
+    display: block;
+    margin: 10px auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 40px;
+}
+.intro h1
+{
+    color: rgb(2, 2, 2);
+
+}
+.thanks
+{
+    /*Best settings and adjustments for thanks section */
+    background-color: #000000;
+    text-align:center;
+    display: block;
+    max-width: 40%;
+    margin: auto auto;
+    padding: 20px 100px 20px 100px;
+    border-radius: 70px;
+    height: auto;
+}
+.multicolor 
+{
+    /*Best settings and adjustments for multicolor feature */
+    background-image: linear-gradient(21deg, #fa8090 ,  #4092e9, #ab2525 , #fac283 );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.firstqoute h1
+{
+    /*text location for firstqoute */
+    text-align:center;
+}
+.secondqoute
+{
+    /*Best settings and adjustments for secondqoute section */
+    background-color: #000000;
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 20px 100px 20px 100px;
+    text-align:center;
+    border-radius: 70px;
+    height: auto;
+}
+#secondqoute h2
+{
+    /*text color and location for this section */
+    color: white;
+    text-align: center;
+}
+.iddevpatel
+{
+    text-align:center;
+    color: black;
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    max-width: 52%;
+    margin: 10px  auto 15px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 70px;
+    height: auto;
+}
+.iddtonney
+{
+    text-align:center;
+    color: black;
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    max-width: 37%;
+    margin: 10px  auto 15px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 70px;
+    height: auto;
+}
+.iddevid
+{
+    text-align:center;
+    color: black;
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    max-width: 44%;
+    margin: 10px  auto 15px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 70px;
+    height: auto;
+}
+.idNicholas
+{
+    text-align:center;
+    color: black;
+    background: linear-gradient(270deg,#b8a2a2,#e9b7b7,#e9b7b7,#e9b7b7,#b8a2a2 );
+    max-width: 27%;
+    margin: 10px  auto 15px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 70px;
+    height: auto;
+}
+.Assignment h1
+{
+    /*text color and width for Assignment section*/
+    color:white;
+    width: auto;
+}
+
+#letmeknow h3,h5,h1
+{
+    /*text color for footer*/
+    color: rgb(12, 12, 12);
+}
+.thanks h1,h4
+{
+    /*text color, text location for thanks section*/
+    color: white;
+    text-align: center;
+}
+
+.btn-btn-primary 
+{
+    /*Best settings and adjustments for submit button*/
+    border: none;
+    color: rgb(0, 255, 106);
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-btn-warning
+{
+    /*Best settings and adjustments for submit button*/
+    border: none;
+    color: red;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* the staerting -------------------------------------------------------*/
+.site-footer
+{
+  background:#313030;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:rgb(255, 255, 255);
+}
+.site-footer hr
+{
+  border-top-color:rgb(255, 255, 255);
+  opacity:2
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:rgb(156, 154, 154);
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:rgb(156, 154, 154);
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
